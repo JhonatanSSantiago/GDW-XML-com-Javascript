@@ -1,0 +1,56 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+ul
+{
+    list-style-type: none;
+    margin:1em;
+    margin-bottom: 2em;
+}
+
+div{
+    flex-grow: 1;
+    padding: 1em;
+}
+
+header {
+
+    margin: 5px;
+    text-align: center;
+}
+
+
+.naofeito, .feito, .prioridade {
+    border:solid 4px;
+    border-radius: 10px;
+    margin:3px;
+    padding: 3px;
+    padding-left: 20px;
+}
+.naofeito{
+    color:green;
+    border-color:#040;
+    background-color:#dfd;
+}
+.feito {
+    color:silver;
+    border-color:gray;
+    background-color:#eee;
+}
+
+.prioridade {
+    color: rgb(7, 21, 148);
+}
+
+.feito > prioridade {
+    color:silver;
+    border-color:gray;
+    background-color:#eee;
+}
+
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 1em;
+}

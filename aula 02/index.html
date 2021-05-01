@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script src="livraria.js"></script>
+    <script>
+        var x, i, y, xmlDoc;
+        var txt ="";  
+        parser = new DOMParser();
+        Livraria=parser.parseFromString(text, "text/xml");
+        livros = Livraria.documentElement.childNodes;
+        for(i = 0; i < livros.length ;i++){ 
+             txt += "<br>";
+            for (y = 0; y < livros[i].childNodes.length; y++) {
+                txt += livros[i].childNodes[y].nodeName + " : " + livros[i].childNodes[y].firstChild.nodeValue + "<br>";
+            }
+                         
+        }
+        document.getElementById("demo").innerHTML = txt;     
+    </script>
+</body>
+</html>
