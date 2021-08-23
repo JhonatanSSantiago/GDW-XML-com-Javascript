@@ -9,18 +9,14 @@ document.getElementById("botao").onclick=()=>
 
     let botao=document.createElement("input");
     botao.setAttribute("type","button");
+    botao.setAttribute("class","red");
     botao.setAttribute("value","Remover");
     botao.onclick=remover;
     li.appendChild(botao);
 
-  /*  let caixa=document.createElement("input");
-    caixa.setAttribute("type", "button");
-    caixa.setAttribute("id", "alterar");
-    caixa.setAttribute("placeholder", "Digite aqui o novo nome");
-    li.appendChild(caixa); */
-
     let btrocar=document.createElement("input");
     btrocar.setAttribute("type","button");
+    btrocar.setAttribute("class","blue");
     btrocar.setAttribute("value","Alterar");
     btrocar.onclick=alterar;    
     li.appendChild(btrocar);
@@ -43,12 +39,14 @@ let alterar=function(){
 
     let botao=document.createElement("input");
     botao.setAttribute("type","button");
+    botao.setAttribute("class","red");
     botao.setAttribute("value","Remover");
     botao.onclick=remover;
     Novali.appendChild(botao);
 
     let btrocar=document.createElement("input");
     btrocar.setAttribute("type","button");
+    btrocar.setAttribute("class","blue");
     btrocar.setAttribute("value","Alterar");
     btrocar.onclick=alterar;    
     Novali.appendChild(btrocar);
